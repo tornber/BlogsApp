@@ -1,9 +1,18 @@
 import React from 'react'
 import './Blog.css'
 import SeeFullLogo from '../../img/Arrow.png'
+import {useNavigate} from 'react-router-dom';
+
 
 
 const Blog = ({post,isFull}) => {
+
+    const navigate = useNavigate()
+
+    const handleRoute = () => {
+        navigate(`/blog/${post?.id}`)
+        window.location.reload()
+    }
 
   return (
       <div className={`${isFull ? "post--full " : ''}post`} key={post?.id}>
@@ -19,13 +28,12 @@ const Blog = ({post,isFull}) => {
                 </div>)})}
             </div>
             <p className={`${isFull ?  "post--full " : ''}description`}>{isFull ? post?.description : post?.description.length > 80 ? post?.description.slice(0,80) + "..." : post?.description.length}</p>
-            <a href={`/blog/${post?.id}`} className={`${isFull ?  "link--full " : ''}link`}>
+            {!isFull && (<div onClick={() => handleRoute()} className={`${isFull ?  "link--full " : ''}link`}>
                 <h4>სრულად ნახვა</h4>
                 <img src={SeeFullLogo} alt='see full post'/>
-            </a>
+            </div>)}
         </div>
       </div>
   )
 }
-
 export default Blog

@@ -17,9 +17,9 @@ const AddBlog = ({loginOrAdd}) => {
   })
 
   useEffect(() => {
-    // if (loginOrAdd === "შესვლა") {
-    //   navigate('/')
-    // }
+    if (loginOrAdd === "შესვლა") {
+      navigate(`${process.env.PUBLIC_URL}/`)
+    }
   },[])
 
   const handleFormChange = (e) => {
@@ -81,7 +81,9 @@ const AddBlog = ({loginOrAdd}) => {
             <label for="categories">
               კატეგორია *
             </label>
-            {/* <input type="text" onChange={(e) => handleFormChange(e)} value={data?.categories} placeholder='შეიყვანეთ სათაური'  id="categories" name="categories" accept="image/*" /> */}
+            <select onChange={(e) => handleFormChange(e)} value={data?.categories} placeholder='შეიყვანეთ სათაური'  id="categories" name="categories">
+              <option id='1'>მარკეტი</option>
+            </select>
           </div>
         </div>
       </form>

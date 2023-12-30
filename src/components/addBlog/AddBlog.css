@@ -24,7 +24,7 @@
     line-height: 20px;
 }
 
-.AddBlog .blog--form input {
+.AddBlog .blog--form input,select {
     width: 290px;
     height: 44px;
     background-color: #FCFCFD;
