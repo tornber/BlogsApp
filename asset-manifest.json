@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/BlogsApp/static/css/main.620ddc9e.chunk.css",
+    "main.js": "/BlogsApp/static/js/main.361601e1.chunk.js",
+    "main.js.map": "/BlogsApp/static/js/main.361601e1.chunk.js.map",
+    "runtime~main.js": "/BlogsApp/static/js/runtime~main.dca05309.js",
+    "runtime~main.js.map": "/BlogsApp/static/js/runtime~main.dca05309.js.map",
+    "static/js/2.57007c8e.chunk.js": "/BlogsApp/static/js/2.57007c8e.chunk.js",
+    "static/js/2.57007c8e.chunk.js.map": "/BlogsApp/static/js/2.57007c8e.chunk.js.map",
+    "static/js/3.b265e9c7.chunk.js": "/BlogsApp/static/js/3.b265e9c7.chunk.js",
+    "static/js/3.b265e9c7.chunk.js.map": "/BlogsApp/static/js/3.b265e9c7.chunk.js.map",
+    "index.html": "/BlogsApp/index.html",
+    "precache-manifest.d76f3f88fc46f53d2e94456eb0cd1af1.js": "/BlogsApp/precache-manifest.d76f3f88fc46f53d2e94456eb0cd1af1.js",
+    "service-worker.js": "/BlogsApp/service-worker.js",
+    "static/css/main.620ddc9e.chunk.css.map": "/BlogsApp/static/css/main.620ddc9e.chunk.css.map",
+    "static/media/info.svg": "/BlogsApp/static/media/info.e31244c8.svg",
+    "static/media/mainPageImg.png": "/BlogsApp/static/media/mainPageImg.004ab6a2.png"
+  }
+}
